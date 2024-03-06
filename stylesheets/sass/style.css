@@ -136,7 +136,7 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: #111;
-  padding-top: 4vmax;
+  padding-top: 5vmax;
   padding-left: 10vmax;
 }
 .wrapper .sec1 .left {
@@ -172,14 +172,21 @@ body {
   margin-top: 2vmax;
 }
 .wrapper .sec1 .right {
-  height: 100%;
-  width: 55%;
+  height: 78%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #fff;
+  border-top-left-radius: 3vmax;
+  border-bottom-left-radius: 3vmax;
+  padding-top: 1.7vmax;
+  padding-left: 1vmax;
   overflow: hidden;
 }
 .wrapper .sec1 .right video {
-  height: 80%;
-  width: 80%;
+  height: 100%;
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -192,10 +199,10 @@ body {
     padding: 0;
   }
   .wrapper .sec1 .left {
-    height: 50vh;
+    height: 60vh;
     width: 85%;
     padding: 0 5vmax;
-    padding-top: 19vmax;
+    padding-top: 16vmax;
   }
   .wrapper .sec1 .left h5 {
     margin-top: 2vmax;
@@ -207,19 +214,57 @@ body {
     margin-top: 4vmax;
   }
   .wrapper .sec1 .right {
-    height: 70vh;
+    height: 60vh;
     width: 100%;
-    padding-top: 12.5vmax;
-    padding-left: 5vmax;
-  }
-  .wrapper .sec1 .right .videobox video {
-    height: 100%;
-    width: 100%;
+    padding-top: 2.5vmax;
+    padding-left: 4vmax;
+    border-radius: 3vmax;
   }
 }
 @media (max-width: 15cm) {
   .wrapper .sec1 .left {
+    height: 70vh;
     width: 100%;
+    padding-top: 16.5vmax;
     padding-left: 2.5vmax;
+  }
+  .wrapper .sec1 .right {
+    height: 50vh;
+    padding-top: 2vmax;
+    padding-left: 2.2vmax;
+  }
+}
+.wrapper .sec2 {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  padding: 0 10vmax;
+  padding-bottom: 5vmax;
+}
+.wrapper .sec2 h2 {
+  text-transform: capitalize;
+  background-image: linear-gradient(92deg, #217ee6 3%, #3187d5 44%, #69a798 70%, #fcf2a6 95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1vmax;
+}
+.wrapper .sec2 h3 {
+  font-family: manropeLight;
+  margin-top: 1vmax;
+}
+@media (max-width: 30cm) {
+  .wrapper .sec2 {
+    padding: 10vmax 5vmax;
+  }
+  .wrapper .sec2 h2 {
+    margin-bottom: 1.5vmax;
+  }
+  .wrapper .sec2 h4 {
+    margin-top: 2vmax;
+  }
+}
+@media (max-width: 15cm) {
+  .wrapper .sec2 {
+    padding: 10vmax 2.5vmax;
   }
 }/*# sourceMappingURL=style.css.map */

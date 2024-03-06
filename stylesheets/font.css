@@ -54,37 +54,25 @@
 @media (max-width: 30cm) {
   .fs1 {
     font-size: 6.5vmax;
-    font-family: manropeRegular;
-    color: #fff;
   }
 
   .fs2 {
     font-size: 5.5vmax;
-    font-family: manropeRegular;
-    color: #fff;
   }
 
   .fs3 {
     font-size: 3.5vmax;
-    font-family: manropeRegular;
-    color: #fff;
   }
 
   .fs4 {
     font-size: 3vmax;
-    font-family: manropeRegular;
-    color: #fff;
   }
 
   .fs5 {
     font-size: 1.8vmax;
-    font-family: manropeRegular;
-    color: #fff;
   }
 
   .fs6 {
     font-size: 1.5vmax;
-    font-family: manropeRegular;
-    color: #fff;
   }
 }
