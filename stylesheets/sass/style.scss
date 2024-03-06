@@ -1,0 +1,268 @@
+@import "../font.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Manrope;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vmax 10vmax;
+  background-color: #fff;
+
+  .left {
+    height: fit-content;
+    width: fit-content;
+
+    img {
+      height: 1.5vmax;
+      margin-top: 0.5vmax;
+    }
+  }
+
+  .right {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 2.5vmax;
+
+    a {
+      color: #000;
+      text-decoration: none;
+      font-family: manropeMedium;
+    }
+
+    button {
+      padding: 0.5vmax 1vmax;
+      border-radius: 0.3vmax;
+      border: none;
+      background-color: #2882de;
+      font-family: manropeMedium;
+    }
+
+    .menubtn {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 30cm) {
+  .nav {
+    padding: 2vmax 5vmax;
+
+    .left {
+      img {
+        height: 2.5vmax;
+      }
+    }
+
+    .right {
+      a {
+        display: none;
+      }
+
+      button {
+        display: none;
+      }
+
+      .menubtn {
+        position: relative;
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        height: 4vmax;
+        width: 5vmax;
+        border-radius: 0.3vmax;
+        background-color: #000;
+
+        .line {
+          height: 0.3vmax;
+          width: 3vmax;
+          background-color: #fff;
+        }
+
+        .l1 {
+          position: absolute;
+          top: 28%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        .l2 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        .l3 {
+          position: absolute;
+          bottom: 28%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 15cm) {
+  .nav {
+    padding: 2vmax 2.5vmax;
+
+    .right {
+      .menubtn {
+        .l1 {
+          top: 25%;
+        }
+
+        .l3 {
+          bottom: 25%;
+        }
+      }
+    }
+  }
+}
+
+.wrapper {
+  position: relative;
+  height: fit-content;
+  width: 100%;
+  background-color: #111;
+
+  .sec1 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #111;
+    padding-top: 4vmax;
+    padding-left: 10vmax;
+
+    .left {
+      height: fit-content;
+      width: 35%;
+
+      h2,
+      h4,
+      h5 {
+        text-transform: capitalize;
+      }
+
+      h2 {
+        background-image: linear-gradient(
+          92deg,
+          #217ee6 3%,
+          #3187d5 44%,
+          #69a798 70%,
+          #fcf2a6 95%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      h5 {
+        font-family: manropeLight;
+        letter-spacing: 0.05vmax;
+        margin-top: 1vmax;
+      }
+
+      p {
+        opacity: 0.4;
+        margin-top: 1vmax;
+      }
+
+      button {
+        padding: 0.8vmax 1.8vmax;
+        border-radius: 0.3vmax;
+        border: none;
+        background-color: #2882de;
+        font-family: manropeMedium;
+        margin-top: 2vmax;
+      }
+    }
+
+    .right {
+      height: 100%;
+      width: 55%;
+      background-color: #fff;
+      overflow: hidden;
+
+      video {
+        height: 80%;
+        width: 80%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  @media (max-width: 30cm) {
+    .sec1 {
+      height: fit-content;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0;
+
+      .left {
+        height: 50vh;
+        width: 85%;
+        padding: 0 5vmax;
+        padding-top: 19vmax;
+
+        h5 {
+          margin-top: 2vmax;
+        }
+
+        p {
+          margin-top: 2vmax;
+        }
+
+        button {
+          margin-top: 4vmax;
+        }
+      }
+
+      .right {
+        height: 70vh;
+        width: 100%;
+        padding-top: 12.5vmax;
+        padding-left: 5vmax;
+
+        .videobox {
+          video {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 15cm) {
+    .sec1 {
+      .left {
+        width: 100%;
+        padding-left: 2.5vmax;
+      }
+    }
+  }
+}

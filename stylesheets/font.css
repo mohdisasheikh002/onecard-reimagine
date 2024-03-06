@@ -1,0 +1,90 @@
+@font-face {
+  src: url("../fonts/Manrope-Light.otf");
+  font-family: "manropeLight";
+}
+@font-face {
+  src: url("../fonts/Manrope-Regular.otf");
+  font-family: "manropeRegular";
+}
+@font-face {
+  src: url("../fonts/Manrope-Medium.otf");
+  font-family: "manropeMedium";
+}
+@font-face {
+  src: url("../fonts/Manrope-Bold.otf");
+  font-family: "manropeBold";
+}
+
+.fs1 {
+  font-size: 5vmax;
+  font-family: manropeRegular;
+  color: #fff;
+}
+
+.fs2 {
+  font-size: 4vmax;
+  font-family: manropeRegular;
+  color: #fff;
+}
+
+.fs3 {
+  font-size: 3vmax;
+  font-family: manropeRegular;
+  color: #fff;
+}
+
+.fs4 {
+  font-size: 2vmax;
+  font-family: manropeRegular;
+  color: #fff;
+}
+
+.fs5 {
+  font-size: 1.2vmax;
+  font-family: manropeRegular;
+  color: #fff;
+}
+
+.fs6 {
+  font-size: 1vmax;
+  font-family: manropeRegular;
+  color: #fff;
+}
+
+@media (max-width: 30cm) {
+  .fs1 {
+    font-size: 6.5vmax;
+    font-family: manropeRegular;
+    color: #fff;
+  }
+
+  .fs2 {
+    font-size: 5.5vmax;
+    font-family: manropeRegular;
+    color: #fff;
+  }
+
+  .fs3 {
+    font-size: 3.5vmax;
+    font-family: manropeRegular;
+    color: #fff;
+  }
+
+  .fs4 {
+    font-size: 3vmax;
+    font-family: manropeRegular;
+    color: #fff;
+  }
+
+  .fs5 {
+    font-size: 1.8vmax;
+    font-family: manropeRegular;
+    color: #fff;
+  }
+
+  .fs6 {
+    font-size: 1.5vmax;
+    font-family: manropeRegular;
+    color: #fff;
+  }
+}

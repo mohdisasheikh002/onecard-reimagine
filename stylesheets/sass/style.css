@@ -1,0 +1,225 @@
+@import "../font.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Manrope;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vmax 10vmax;
+  background-color: #fff;
+}
+.nav .left {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.nav .left img {
+  height: 1.5vmax;
+  margin-top: 0.5vmax;
+}
+.nav .right {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 2.5vmax;
+}
+.nav .right a {
+  color: #000;
+  text-decoration: none;
+  font-family: manropeMedium;
+}
+.nav .right button {
+  padding: 0.5vmax 1vmax;
+  border-radius: 0.3vmax;
+  border: none;
+  background-color: #2882de;
+  font-family: manropeMedium;
+}
+.nav .right .menubtn {
+  display: none;
+}
+
+@media (max-width: 30cm) {
+  .nav {
+    padding: 2vmax 5vmax;
+  }
+  .nav .left img {
+    height: 2.5vmax;
+  }
+  .nav .right a {
+    display: none;
+  }
+  .nav .right button {
+    display: none;
+  }
+  .nav .right .menubtn {
+    position: relative;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    height: 4vmax;
+    width: 5vmax;
+    border-radius: 0.3vmax;
+    background-color: #000;
+  }
+  .nav .right .menubtn .line {
+    height: 0.3vmax;
+    width: 3vmax;
+    background-color: #fff;
+  }
+  .nav .right .menubtn .l1 {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .nav .right .menubtn .l2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .nav .right .menubtn .l3 {
+    position: absolute;
+    bottom: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 15cm) {
+  .nav {
+    padding: 2vmax 2.5vmax;
+  }
+  .nav .right .menubtn .l1 {
+    top: 25%;
+  }
+  .nav .right .menubtn .l3 {
+    bottom: 25%;
+  }
+}
+.wrapper {
+  position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  background-color: #111;
+}
+.wrapper .sec1 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111;
+  padding-top: 4vmax;
+  padding-left: 10vmax;
+}
+.wrapper .sec1 .left {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 35%;
+}
+.wrapper .sec1 .left h2,
+.wrapper .sec1 .left h4,
+.wrapper .sec1 .left h5 {
+  text-transform: capitalize;
+}
+.wrapper .sec1 .left h2 {
+  background-image: linear-gradient(92deg, #217ee6 3%, #3187d5 44%, #69a798 70%, #fcf2a6 95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.wrapper .sec1 .left h5 {
+  font-family: manropeLight;
+  letter-spacing: 0.05vmax;
+  margin-top: 1vmax;
+}
+.wrapper .sec1 .left p {
+  opacity: 0.4;
+  margin-top: 1vmax;
+}
+.wrapper .sec1 .left button {
+  padding: 0.8vmax 1.8vmax;
+  border-radius: 0.3vmax;
+  border: none;
+  background-color: #2882de;
+  font-family: manropeMedium;
+  margin-top: 2vmax;
+}
+.wrapper .sec1 .right {
+  height: 100%;
+  width: 55%;
+  background-color: #fff;
+  overflow: hidden;
+}
+.wrapper .sec1 .right video {
+  height: 80%;
+  width: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 30cm) {
+  .wrapper .sec1 {
+    height: -moz-fit-content;
+    height: fit-content;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+  .wrapper .sec1 .left {
+    height: 50vh;
+    width: 85%;
+    padding: 0 5vmax;
+    padding-top: 19vmax;
+  }
+  .wrapper .sec1 .left h5 {
+    margin-top: 2vmax;
+  }
+  .wrapper .sec1 .left p {
+    margin-top: 2vmax;
+  }
+  .wrapper .sec1 .left button {
+    margin-top: 4vmax;
+  }
+  .wrapper .sec1 .right {
+    height: 70vh;
+    width: 100%;
+    padding-top: 12.5vmax;
+    padding-left: 5vmax;
+  }
+  .wrapper .sec1 .right .videobox video {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 15cm) {
+  .wrapper .sec1 .left {
+    width: 100%;
+    padding-left: 2.5vmax;
+  }
+}/*# sourceMappingURL=style.css.map */
