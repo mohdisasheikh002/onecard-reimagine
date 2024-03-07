@@ -23,6 +23,7 @@
 
 .fs2 {
   font-size: 4vmax;
+  line-height: 4.8vmax;
   font-family: manropeRegular;
   color: #fff;
 }
@@ -57,7 +58,8 @@
   }
 
   .fs2 {
-    font-size: 5.5vmax;
+    font-size: 6vmax;
+    line-height: 6.8vmax;
   }
 
   .fs3 {
