@@ -576,4 +576,148 @@ body {
       }
     }
   }
+
+  .sec6 {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vmax 10vmax;
+
+    h1 {
+      line-height: initial;
+      text-transform: capitalize;
+      background-image: linear-gradient(
+        92deg,
+        #217ee6 3%,
+        #3187d5 44%,
+        #69a798 70%,
+        #fcf2a6 95%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .slider {
+      height: fit-content;
+      width: 100%;
+      margin-top: 5vmax;
+
+      h5 {
+        letter-spacing: 0.05vmax;
+        font-family: manropeLight;
+        text-transform: capitalize;
+        margin-left: 3vmax;
+      }
+
+      .cardbox {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 2vmax;
+        margin-top: 1vmax;
+
+        .card {
+          height: fit-content;
+          width: fit-content;
+
+          .top {
+            height: 12vmax;
+            width: 23vmax;
+            border-radius: 0.3vmax;
+            overflow: hidden;
+
+            img {
+              height: 100%;
+              width: 100%;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+
+          .bottom {
+            height: fit-content;
+            width: 23vmax;
+            margin-top: 1vmax;
+
+            h6 {
+              font-size: 0.8vmax;
+              letter-spacing: 0.05vmax;
+              font-weight: 100;
+              font-family: manropeLight;
+              opacity: 0.5;
+            }
+
+            p {
+              letter-spacing: 0.05vmax;
+              font-family: manropeLight;
+              margin-top: 0.5vmax;
+              opacity: 0.5;
+              padding-right: 4vmax;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 30cm) {
+    .sec6 {
+      padding: 10vmax 5vmax;
+      align-items: flex-start;
+
+      .slider {
+        overflow: hidden;
+
+        h5 {
+          margin-left: 0;
+        }
+
+        .cardbox {
+          justify-content: flex-start;
+          overflow-x: auto;
+
+          .card {
+            flex-shrink: 0;
+
+            .top {
+              height: 22vmax;
+              width: 33vmax;
+
+              img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+              }
+            }
+
+            .bottom {
+              margin-top: -1vmax;
+              width: 33vmax;
+
+              h6 {
+                font-size: 1.2vmax;
+              }
+
+              p {
+                margin-top: 1.2vmax;
+              }
+            }
+          }
+
+          &::-webkit-scrollbar {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 30cm) {
+    .sec6 {
+      padding: 10vmax 2.5vmax;
+    }
+  }
 }
