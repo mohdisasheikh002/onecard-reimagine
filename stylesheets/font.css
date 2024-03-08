@@ -16,7 +16,8 @@
 }
 
 .fs1 {
-  font-size: 5vmax;
+  font-size: 6vmax;
+  line-height: 6.2vmax;
   font-family: manropeRegular;
   color: #fff;
 }
@@ -54,7 +55,8 @@
 
 @media (max-width: 30cm) {
   .fs1 {
-    font-size: 6.5vmax;
+    font-size: 7vmax;
+    line-height: 7.5vmax;
   }
 
   .fs2 {

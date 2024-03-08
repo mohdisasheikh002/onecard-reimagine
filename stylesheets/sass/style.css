@@ -149,17 +149,20 @@ body {
 .wrapper .sec1 .left h5 {
   text-transform: capitalize;
 }
-.wrapper .sec1 .left h2 {
+.wrapper .sec1 .left h1 {
+  text-transform: capitalize;
   background-image: linear-gradient(92deg, #217ee6 3%, #3187d5 44%, #69a798 70%, #fcf2a6 95%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-top: 0.5vmax;
 }
 .wrapper .sec1 .left h5 {
   font-family: manropeLight;
   letter-spacing: 0.05vmax;
-  margin-top: 1vmax;
+  margin-top: 1.5vmax;
 }
 .wrapper .sec1 .left p {
+  line-height: 2vmax;
   opacity: 0.4;
   margin-top: 1vmax;
 }
@@ -199,19 +202,21 @@ body {
     padding: 0;
   }
   .wrapper .sec1 .left {
-    height: 60vh;
+    height: -moz-fit-content;
+    height: fit-content;
     width: 82%;
-    padding: 0 5vmax;
-    padding-top: 16.5vmax;
+    padding: 10vmax 5vmax;
+    padding-top: 17vmax;
   }
   .wrapper .sec1 .left h5 {
-    margin-top: 2vmax;
+    margin-top: 2.5vmax;
   }
   .wrapper .sec1 .left p {
-    margin-top: 2vmax;
+    line-height: 2.8vmax;
+    margin-top: 1.5vmax;
   }
   .wrapper .sec1 .left button {
-    margin-top: 4vmax;
+    margin-top: 3vmax;
   }
   .wrapper .sec1 .right {
     height: 60vh;
@@ -222,9 +227,12 @@ body {
 @media (max-width: 15cm) {
   .wrapper .sec1 .left {
     height: 70vh;
-    width: 90%;
+    width: 100%;
     padding-top: 18vmax;
     padding-left: 2.5vmax;
+  }
+  .wrapper .sec1 .left p {
+    padding-right: 5vmax;
   }
   .wrapper .sec1 .right {
     height: 50vh;
@@ -232,7 +240,10 @@ body {
 }
 @media (max-width: 10cm) {
   .wrapper .sec1 .left {
-    height: 64vh;
+    padding-top: 19vmax;
+  }
+  .wrapper .sec1 .left p {
+    padding-right: 3vmax;
   }
 }
 .wrapper .sec2 {
@@ -254,7 +265,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 3vmax;
+  gap: 2vmax;
   margin-top: 1vmax;
 }
 .wrapper .sec2 .textbox h4 {
@@ -324,6 +335,7 @@ body {
 }
 .wrapper .sec3 .right p,
 .wrapper .sec5 .right p {
+  line-height: 2vmax;
   opacity: 0.4;
   margin-top: 1vmax;
 }
@@ -365,6 +377,7 @@ body {
   }
   .wrapper .sec3 .right p,
   .wrapper .sec5 .right p {
+    line-height: 2.8vmax;
     margin-top: 2vmax;
   }
   .wrapper .sec3 .right button,
@@ -404,6 +417,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .wrapper .sec4 .left p {
+  line-height: 2vmax;
   opacity: 0.4;
   margin-top: 1vmax;
 }
@@ -454,12 +468,13 @@ body {
     margin-top: 1.2vmax;
   }
   .wrapper .sec4 .left p {
+    line-height: 2.8vmax;
     margin-top: 2vmax;
   }
   .wrapper .sec4 .left button {
     margin-top: 4vmax;
   }
-  .wrapper .right {
+  .wrapper .sec4 .right {
     height: 60vh;
     width: 100%;
     border-radius: 1.3vmax;
@@ -473,5 +488,10 @@ body {
   .wrapper .sec4 .right {
     height: 50vh;
     width: 100%;
+  }
+}
+@media (max-width: 10cm) {
+  .wrapper .sec4 .left {
+    width: 85%;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -168,7 +168,8 @@ body {
         text-transform: capitalize;
       }
 
-      h2 {
+      h1 {
+        text-transform: capitalize;
         background-image: linear-gradient(
           92deg,
           #217ee6 3%,
@@ -178,15 +179,17 @@ body {
         );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        margin-top: 0.5vmax;
       }
 
       h5 {
         font-family: manropeLight;
         letter-spacing: 0.05vmax;
-        margin-top: 1vmax;
+        margin-top: 1.5vmax;
       }
 
       p {
+        line-height: 2vmax;
         opacity: 0.4;
         margin-top: 1vmax;
       }
@@ -229,21 +232,22 @@ body {
       padding: 0;
 
       .left {
-        height: 60vh;
+        height: fit-content;
         width: 82%;
-        padding: 0 5vmax;
-        padding-top: 16.5vmax;
+        padding: 10vmax 5vmax;
+        padding-top: 17vmax;
 
         h5 {
-          margin-top: 2vmax;
+          margin-top: 2.5vmax;
         }
 
         p {
-          margin-top: 2vmax;
+          line-height: 2.8vmax;
+          margin-top: 1.5vmax;
         }
 
         button {
-          margin-top: 4vmax;
+          margin-top: 3vmax;
         }
       }
 
@@ -259,9 +263,13 @@ body {
     .sec1 {
       .left {
         height: 70vh;
-        width: 90%;
+        width: 100%;
         padding-top: 18vmax;
         padding-left: 2.5vmax;
+
+        p {
+          padding-right: 5vmax;
+        }
       }
 
       .right {
@@ -273,7 +281,11 @@ body {
   @media (max-width: 10cm) {
     .sec1 {
       .left {
-        height: 64vh;
+        padding-top: 19vmax;
+
+        p {
+          padding-right: 3vmax;
+        }
       }
     }
   }
@@ -302,7 +314,7 @@ body {
       width: 100%;
       display: flex;
       justify-content: center;
-      gap: 3vmax;
+      gap: 2vmax;
       margin-top: 1vmax;
 
       h4 {
@@ -379,6 +391,7 @@ body {
       }
 
       p {
+        line-height: 2vmax;
         opacity: 0.4;
         margin-top: 1vmax;
       }
@@ -419,6 +432,7 @@ body {
         }
 
         p {
+          line-height: 2.8vmax;
           margin-top: 2vmax;
         }
 
@@ -470,6 +484,7 @@ body {
       }
 
       p {
+        line-height: 2vmax;
         opacity: 0.4;
         margin-top: 1vmax;
       }
@@ -523,6 +538,7 @@ body {
         }
 
         p {
+          line-height: 2.8vmax;
           margin-top: 2vmax;
         }
 
@@ -530,12 +546,12 @@ body {
           margin-top: 4vmax;
         }
       }
-    }
 
-    .right {
-      height: 60vh;
-      width: 100%;
-      border-radius: 1.3vmax;
+      .right {
+        height: 60vh;
+        width: 100%;
+        border-radius: 1.3vmax;
+      }
     }
   }
 
@@ -549,6 +565,14 @@ body {
       .right {
         height: 50vh;
         width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 10cm) {
+    .sec4 {
+      .left {
+        width: 85%;
       }
     }
   }
