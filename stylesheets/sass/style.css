@@ -51,7 +51,7 @@ body {
   font-family: manropeMedium;
 }
 .nav .right button {
-  padding: 0.5vmax 1vmax;
+  padding: 0.8vmax 1.8vmax;
   border-radius: 0.3vmax;
   border: none;
   background-color: #2882de;
@@ -76,14 +76,10 @@ body {
   }
   .nav .right .menubtn {
     position: relative;
-    height: -moz-fit-content;
-    height: fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
     height: 4vmax;
     width: 5vmax;
+    display: flex;
+    flex-direction: column;
     border-radius: 0.3vmax;
     background-color: #000;
   }
@@ -96,19 +92,24 @@ body {
     position: absolute;
     top: 28%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 0%);
+    transform-origin: center;
+    transition: 0.05s linear;
   }
   .nav .right .menubtn .l2 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: 0.15s linear;
   }
   .nav .right .menubtn .l3 {
     position: absolute;
-    bottom: 28%;
+    top: 65%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 0%);
+    transform-origin: center;
+    transition: 0.05s linear;
   }
 }
 @media (max-width: 15cm) {
@@ -216,6 +217,7 @@ body {
     margin-top: 1.5vmax;
   }
   .wrapper .sec1 .left button {
+    padding: 1vmax 2vmax;
     margin-top: 3vmax;
   }
   .wrapper .sec1 .right {
@@ -226,9 +228,7 @@ body {
 }
 @media (max-width: 15cm) {
   .wrapper .sec1 .left {
-    height: 70vh;
     width: 100%;
-    padding-top: 18vmax;
     padding-left: 2.5vmax;
   }
   .wrapper .sec1 .left p {
@@ -236,14 +236,6 @@ body {
   }
   .wrapper .sec1 .right {
     height: 50vh;
-  }
-}
-@media (max-width: 10cm) {
-  .wrapper .sec1 .left {
-    padding-top: 19vmax;
-  }
-  .wrapper .sec1 .left p {
-    padding-right: 3vmax;
   }
 }
 .wrapper .sec2 {
@@ -289,6 +281,9 @@ body {
 }
 .wrapper .sec3,
 .wrapper .sec5 {
+  position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100%;
   display: flex;
   align-items: center;
@@ -351,8 +346,6 @@ body {
 @media (max-width: 30cm) {
   .wrapper .sec3,
   .wrapper .sec5 {
-    height: -moz-fit-content;
-    height: fit-content;
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
@@ -392,7 +385,7 @@ body {
   }
   .wrapper .sec3 .right,
   .wrapper .sec5 .right {
-    width: 91%;
+    width: 90.9%;
     padding: 10vmax 2.5vmax;
   }
 }
@@ -495,14 +488,44 @@ body {
     width: 85%;
   }
 }
+.wrapper .sec5 {
+  padding-bottom: 12vmax;
+}
+.wrapper .sec5::after {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: calc(100% - 10vmax);
+  background-color: #fff;
+  opacity: 0.3;
+}
+@media (max-width: 30cm) {
+  .wrapper .sec5 {
+    padding-bottom: 7vmax;
+  }
+  .wrapper .sec5::after {
+    height: 1px;
+    width: calc(100% - 5vmax);
+  }
+}
+@media (max-width: 1.5vmax) {
+  .wrapper .sec5::after {
+    width: calc(100% - 2.5vmax);
+  }
+}
 .wrapper .sec6 {
+  position: relative;
   height: -moz-fit-content;
   height: fit-content;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5vmax 10vmax;
+  padding: 10vmax 10vmax;
+  padding-bottom: 12vmax;
 }
 .wrapper .sec6 h1 {
   line-height: initial;
@@ -572,10 +595,30 @@ body {
   opacity: 0.5;
   padding-right: 4vmax;
 }
+.wrapper .sec6 button {
+  padding: 0.8vmax 1.8vmax;
+  border-radius: 0.3vmax;
+  border: none;
+  background-color: #2882de;
+  font-family: manropeMedium;
+  margin-top: 5vmax;
+}
+.wrapper .sec6::after {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 90%;
+  background-color: #fff;
+  opacity: 0.3;
+}
 @media (max-width: 30cm) {
   .wrapper .sec6 {
-    padding: 10vmax 5vmax;
     align-items: flex-start;
+    padding: 15vmax 5vmax;
+    padding-bottom: 17vmax;
   }
   .wrapper .sec6 .slider {
     overflow: hidden;
@@ -584,6 +627,7 @@ body {
     margin-left: 0;
   }
   .wrapper .sec6 .slider .cardbox {
+    margin-top: -1vmax;
     justify-content: flex-start;
     overflow-x: auto;
   }
@@ -614,8 +658,9 @@ body {
     display: none;
   }
 }
-@media (max-width: 30cm) {
+@media (max-width: 15cm) {
   .wrapper .sec6 {
-    padding: 10vmax 2.5vmax;
+    padding: 15vmax 2.5vmax;
+    padding-bottom: 17vmax;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -50,7 +50,7 @@ body {
     }
 
     button {
-      padding: 0.5vmax 1vmax;
+      padding: 0.8vmax 1.8vmax;
       border-radius: 0.3vmax;
       border: none;
       background-color: #2882de;
@@ -84,12 +84,10 @@ body {
 
       .menubtn {
         position: relative;
-        height: fit-content;
-        width: fit-content;
-        display: flex;
-        flex-direction: column;
         height: 4vmax;
         width: 5vmax;
+        display: flex;
+        flex-direction: column;
         border-radius: 0.3vmax;
         background-color: #000;
 
@@ -103,7 +101,9 @@ body {
           position: absolute;
           top: 28%;
           left: 50%;
-          transform: translateX(-50%);
+          transform: translate(-50%, 0%);
+          transform-origin: center;
+          transition: 0.05s linear;
         }
 
         .l2 {
@@ -111,13 +111,16 @@ body {
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
+          transition: 0.15s linear;
         }
 
         .l3 {
           position: absolute;
-          bottom: 28%;
+          top: 65%;
           left: 50%;
-          transform: translateX(-50%);
+          transform: translate(-50%, 0%);
+          transform-origin: center;
+          transition: 0.05s linear;
         }
       }
     }
@@ -247,6 +250,7 @@ body {
         }
 
         button {
+          padding: 1vmax 2vmax;
           margin-top: 3vmax;
         }
       }
@@ -262,9 +266,7 @@ body {
   @media (max-width: 15cm) {
     .sec1 {
       .left {
-        height: 70vh;
         width: 100%;
-        padding-top: 18vmax;
         padding-left: 2.5vmax;
 
         p {
@@ -274,18 +276,6 @@ body {
 
       .right {
         height: 50vh;
-      }
-    }
-  }
-
-  @media (max-width: 10cm) {
-    .sec1 {
-      .left {
-        padding-top: 19vmax;
-
-        p {
-          padding-right: 3vmax;
-        }
       }
     }
   }
@@ -344,6 +334,8 @@ body {
 
   .sec3,
   .sec5 {
+    position: relative;
+    height: fit-content;
     width: 100%;
     display: flex;
     align-items: center;
@@ -410,7 +402,6 @@ body {
   @media (max-width: 30cm) {
     .sec3,
     .sec5 {
-      height: fit-content;
       flex-direction: column;
       align-items: flex-start;
       padding: 0;
@@ -451,7 +442,7 @@ body {
       }
 
       .right {
-        width: 91%;
+        width: 90.9%;
         padding: 10vmax 2.5vmax;
       }
     }
@@ -577,13 +568,50 @@ body {
     }
   }
 
+  .sec5 {
+    padding-bottom: 12vmax;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0%;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 2px;
+      width: calc(100% - 10vmax);
+      background-color: #fff;
+      opacity: 0.3;
+    }
+  }
+
+  @media (max-width: 30cm) {
+    .sec5 {
+      padding-bottom: 7vmax;
+
+      &::after {
+        height: 1px;
+        width: calc(100% - 5vmax);
+      }
+    }
+  }
+
+  @media (max-width: 1.5vmax) {
+    .sec5 {
+      &::after {
+        width: calc(100% - 2.5vmax);
+      }
+    }
+  }
+
   .sec6 {
+    position: relative;
     height: fit-content;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5vmax 10vmax;
+    padding: 10vmax 10vmax;
+    padding-bottom: 12vmax;
 
     h1 {
       line-height: initial;
@@ -661,12 +689,34 @@ body {
         }
       }
     }
+
+    button {
+      padding: 0.8vmax 1.8vmax;
+      border-radius: 0.3vmax;
+      border: none;
+      background-color: #2882de;
+      font-family: manropeMedium;
+      margin-top: 5vmax;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0%;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 2px;
+      width: 90%;
+      background-color: #fff;
+      opacity: 0.3;
+    }
   }
 
   @media (max-width: 30cm) {
     .sec6 {
-      padding: 10vmax 5vmax;
       align-items: flex-start;
+      padding: 15vmax 5vmax;
+      padding-bottom: 17vmax;
 
       .slider {
         overflow: hidden;
@@ -676,6 +726,7 @@ body {
         }
 
         .cardbox {
+          margin-top: -1vmax;
           justify-content: flex-start;
           overflow-x: auto;
 
@@ -715,9 +766,10 @@ body {
     }
   }
 
-  @media (max-width: 30cm) {
+  @media (max-width: 15cm) {
     .sec6 {
-      padding: 10vmax 2.5vmax;
+      padding: 15vmax 2.5vmax;
+      padding-bottom: 17vmax;
     }
   }
 }
