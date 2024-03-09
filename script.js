@@ -35,7 +35,7 @@ mbtn.addEventListener("click", function (e) {
           transform: "translate(-50%, 0%)",
         });
         gsap.to(".l3", {
-          top: "65%",
+          bottom: "28%",
           transform: "translate(-50%, 0%)",
         });
       },

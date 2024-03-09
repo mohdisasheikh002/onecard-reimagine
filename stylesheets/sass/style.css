@@ -105,7 +105,7 @@ body {
   }
   .nav .right .menubtn .l3 {
     position: absolute;
-    top: 65%;
+    bottom: 28%;
     left: 50%;
     transform: translate(-50%, 0%);
     transform-origin: center;
@@ -236,6 +236,15 @@ body {
   }
   .wrapper .sec1 .right {
     height: 50vh;
+  }
+}
+@media (max-width: 10cm) {
+  .wrapper .sec1 .left {
+    width: 100%;
+    padding-left: 2.5vmax;
+  }
+  .wrapper .sec1 .left p {
+    padding-right: 3vmax;
   }
 }
 .wrapper .sec2 {
@@ -385,7 +394,14 @@ body {
   }
   .wrapper .sec3 .right,
   .wrapper .sec5 .right {
-    width: 90.9%;
+    width: 91%;
+    padding: 10vmax 2.5vmax;
+  }
+}
+@media (max-width: 10cm) {
+  .wrapper .sec3 .right,
+  .wrapper .sec5 .right {
+    width: 95%;
     padding: 10vmax 2.5vmax;
   }
 }
@@ -485,7 +501,7 @@ body {
 }
 @media (max-width: 10cm) {
   .wrapper .sec4 .left {
-    width: 85%;
+    width: 100%;
   }
 }
 .wrapper .sec5 {
@@ -511,7 +527,7 @@ body {
     width: calc(100% - 5vmax);
   }
 }
-@media (max-width: 1.5vmax) {
+@media (max-width: 15vmax) {
   .wrapper .sec5::after {
     width: calc(100% - 2.5vmax);
   }

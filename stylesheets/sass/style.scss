@@ -116,7 +116,7 @@ body {
 
         .l3 {
           position: absolute;
-          top: 65%;
+          bottom: 28%;
           left: 50%;
           transform: translate(-50%, 0%);
           transform-origin: center;
@@ -276,6 +276,19 @@ body {
 
       .right {
         height: 50vh;
+      }
+    }
+  }
+
+  @media (max-width: 10cm) {
+    .sec1 {
+      .left {
+        width: 100%;
+        padding-left: 2.5vmax;
+
+        p {
+          padding-right: 3vmax;
+        }
       }
     }
   }
@@ -442,7 +455,17 @@ body {
       }
 
       .right {
-        width: 90.9%;
+        width: 91%;
+        padding: 10vmax 2.5vmax;
+      }
+    }
+  }
+
+  @media (max-width: 10cm) {
+    .sec3,
+    .sec5 {
+      .right {
+        width: 95%;
         padding: 10vmax 2.5vmax;
       }
     }
@@ -563,7 +586,7 @@ body {
   @media (max-width: 10cm) {
     .sec4 {
       .left {
-        width: 85%;
+        width: 100%;
       }
     }
   }
@@ -595,7 +618,7 @@ body {
     }
   }
 
-  @media (max-width: 1.5vmax) {
+  @media (max-width: 15vmax) {
     .sec5 {
       &::after {
         width: calc(100% - 2.5vmax);
