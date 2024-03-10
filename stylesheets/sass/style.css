@@ -82,35 +82,27 @@ body {
     width: 5vmax;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border-radius: 0.3vmax;
     background-color: #000;
   }
   .nav .right .menubtn .line {
-    height: 0.2vmax;
+    height: 0.22vmax;
     width: 3vmax;
     background-color: #fff;
   }
   .nav .right .menubtn .l1 {
     position: absolute;
-    top: 28%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transform-origin: center;
+    transform: translateY(-350%);
     transition: 0.05s linear;
   }
   .nav .right .menubtn .l2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     transition: 0.15s linear;
   }
   .nav .right .menubtn .l3 {
     position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transform-origin: center;
+    transform: translateY(350%);
     transition: 0.05s linear;
   }
 }
@@ -274,7 +266,7 @@ body {
     padding-left: 2.5vmax;
   }
   .wrapper .sec1 .left p {
-    padding-right: 3vmax;
+    padding-right: 1vmax;
   }
 }
 .wrapper .sec2 {
@@ -430,7 +422,7 @@ body {
 }
 @media (max-width: 10cm) {
   .wrapper .sec3 .right {
-    width: 95%;
+    width: 93%;
     padding: 10vmax 2.5vmax;
   }
 }

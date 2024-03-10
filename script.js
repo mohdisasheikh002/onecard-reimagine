@@ -9,13 +9,13 @@ mbtn.addEventListener("click", function (e) {
 
     gsap.to(".l1", {
       delay: 0.2,
-      top: "50%",
+      y: 0,
       rotate: 45,
     });
 
     gsap.to(".l3", {
       delay: 0.2,
-      top: "50%",
+      y: 0,
       rotate: -45,
     });
 
@@ -38,12 +38,12 @@ mbtn.addEventListener("click", function (e) {
     });
 
     gsap.to(".l1", {
-      top: "28%",
+      y: "-350%",
       rotate: 0,
     });
 
     gsap.to(".l3", {
-      top: "70%",
+      y: "350%",
       rotate: 0,
     });
 
