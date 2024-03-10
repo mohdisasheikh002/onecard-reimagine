@@ -86,7 +86,7 @@ body {
     background-color: #000;
   }
   .nav .right .menubtn .line {
-    height: 0.3vmax;
+    height: 0.2vmax;
     width: 3vmax;
     background-color: #fff;
   }
@@ -94,7 +94,7 @@ body {
     position: absolute;
     top: 28%;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -50%);
     transform-origin: center;
     transition: 0.05s linear;
   }
@@ -107,9 +107,9 @@ body {
   }
   .nav .right .menubtn .l3 {
     position: absolute;
-    bottom: 28%;
+    top: 70%;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -50%);
     transform-origin: center;
     transition: 0.05s linear;
   }
@@ -118,11 +118,38 @@ body {
   .nav {
     padding: 2vmax 2.5vmax;
   }
-  .nav .right .menubtn .l1 {
-    top: 25%;
+}
+.menubox {
+  display: none;
+}
+
+@media (max-width: 30cm) {
+  .menubox {
+    position: fixed;
+    top: -70%;
+    left: 0;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3vmax;
+    z-index: 88;
+    background-color: #fff;
+    padding: 0 5vmax;
+    padding-top: 5vmax;
+    transition: 0.15s linear;
   }
-  .nav .right .menubtn .l3 {
-    bottom: 25%;
+  .menubox a {
+    font-family: manropeMedium;
+    text-decoration: none;
+    color: #000;
+  }
+}
+@media (max-width: 15cm) {
+  .menubox {
+    padding: 0 2.5vmax;
+    padding-top: 5vmax;
   }
 }
 .wrapper {
@@ -247,7 +274,7 @@ body {
     padding-left: 2.5vmax;
   }
   .wrapper .sec1 .left p {
-    padding-right: 0;
+    padding-right: 3vmax;
   }
 }
 .wrapper .sec2 {
@@ -409,7 +436,7 @@ body {
 }
 @media (max-width: 10cm) {
   .wrapper .sec5 .right {
-    width: 80%;
+    width: 90%;
     padding: 10vmax 2.5vmax;
   }
 }

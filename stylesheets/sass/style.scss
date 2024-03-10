@@ -94,7 +94,7 @@ body {
         background-color: #000;
 
         .line {
-          height: 0.3vmax;
+          height: 0.2vmax;
           width: 3vmax;
           background-color: #fff;
         }
@@ -103,7 +103,7 @@ body {
           position: absolute;
           top: 28%;
           left: 50%;
-          transform: translate(-50%, 0%);
+          transform: translate(-50%, -50%);
           transform-origin: center;
           transition: 0.05s linear;
         }
@@ -118,9 +118,9 @@ body {
 
         .l3 {
           position: absolute;
-          bottom: 28%;
+          top: 70%;
           left: 50%;
-          transform: translate(-50%, 0%);
+          transform: translate(-50%, -50%);
           transform-origin: center;
           transition: 0.05s linear;
         }
@@ -132,18 +132,42 @@ body {
 @media (max-width: 15cm) {
   .nav {
     padding: 2vmax 2.5vmax;
+  }
+}
 
-    .right {
-      .menubtn {
-        .l1 {
-          top: 25%;
-        }
+.menubox {
+  display: none;
+}
 
-        .l3 {
-          bottom: 25%;
-        }
-      }
+@media (max-width: 30cm) {
+  .menubox {
+    position: fixed;
+    top: -70%;
+    left: 0;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3vmax;
+    z-index: 88;
+    background-color: #fff;
+    padding: 0 5vmax;
+    padding-top: 5vmax;
+    transition: 0.15s linear;
+
+    a {
+      font-family: manropeMedium;
+      text-decoration: none;
+      color: #000;
     }
+  }
+}
+
+@media (max-width: 15cm) {
+  .menubox {
+    padding: 0 2.5vmax;
+    padding-top: 5vmax;
   }
 }
 
@@ -290,7 +314,7 @@ body {
         padding-left: 2.5vmax;
 
         p {
-          padding-right: 0;
+          padding-right: 3vmax;
         }
       }
     }
@@ -476,7 +500,7 @@ body {
   @media (max-width: 10cm) {
     .sec5 {
       .right {
-        width: 80%;
+        width: 90%;
         padding: 10vmax 2.5vmax;
       }
     }

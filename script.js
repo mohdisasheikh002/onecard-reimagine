@@ -3,46 +3,53 @@ var toggle = true;
 
 mbtn.addEventListener("click", function (e) {
   if (toggle === true) {
-    var tl1 = gsap.timeline();
-
-    tl1.to(".l2", {
-      width: "0vmax",
+    gsap.to(".l2", {
+      opacity: 0,
     });
 
-    tl1.to([".l1", ".l3"], {
-      top: "48%",
-      onComplete: () => {
-        gsap.to(".l1", {
-          transform: "translate(-50%, -50%)",
-          rotate: "45deg",
-        });
-        gsap.to(".l3", {
-          transform: "translate(-50%, -50%)",
-          rotate: "-45deg",
-        });
-      },
+    gsap.to(".l1", {
+      delay: 0.2,
+      top: "50%",
+      rotate: 45,
+    });
+
+    gsap.to(".l3", {
+      delay: 0.2,
+      top: "50%",
+      rotate: -45,
+    });
+
+    gsap.to(".menubox", {
+      top: "0%",
+    });
+
+    gsap.to("body", {
+      overflow: "hidden",
     });
 
     toggle = false;
   } else {
-    var tl2 = gsap.timeline();
-
-    tl2.to([".l1", ".l3"], {
-      rotate: "0deg",
-      onComplete: () => {
-        gsap.to(".l1", {
-          top: "28%",
-          transform: "translate(-50%, 0%)",
-        });
-        gsap.to(".l3", {
-          bottom: "28%",
-          transform: "translate(-50%, 0%)",
-        });
-      },
+    gsap.to("body", {
+      overflow: "initial",
     });
 
-    tl2.to(".l2", {
-      width: "3vmax",
+    gsap.to(".menubox", {
+      top: "-70%",
+    });
+
+    gsap.to(".l1", {
+      top: "28%",
+      rotate: 0,
+    });
+
+    gsap.to(".l3", {
+      top: "70%",
+      rotate: 0,
+    });
+
+    gsap.to(".l2", {
+      delay: 0.2,
+      opacity: 1,
     });
 
     toggle = true;
