@@ -11,6 +11,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: Manrope;
+  cursor: default;
 }
 
 .nav {
@@ -55,6 +56,7 @@ body {
       border: none;
       background-color: #2882de;
       font-family: manropeMedium;
+      cursor: pointer;
     }
 
     .menubtn {
@@ -204,6 +206,7 @@ body {
         background-color: #2882de;
         font-family: manropeMedium;
         margin-top: 2vmax;
+        cursor: pointer;
       }
     }
 
@@ -287,7 +290,7 @@ body {
         padding-left: 2.5vmax;
 
         p {
-          padding-right: 3vmax;
+          padding-right: 0;
         }
       }
     }
@@ -462,10 +465,18 @@ body {
   }
 
   @media (max-width: 10cm) {
-    .sec3,
-    .sec5 {
+    .sec3 {
       .right {
         width: 95%;
+        padding: 10vmax 2.5vmax;
+      }
+    }
+  }
+
+  @media (max-width: 10cm) {
+    .sec5 {
+      .right {
+        width: 80%;
         padding: 10vmax 2.5vmax;
       }
     }
@@ -586,7 +597,7 @@ body {
   @media (max-width: 10cm) {
     .sec4 {
       .left {
-        width: 100%;
+        width: 98%;
       }
     }
   }
@@ -720,6 +731,7 @@ body {
       background-color: #2882de;
       font-family: manropeMedium;
       margin-top: 5vmax;
+      cursor: pointer;
     }
 
     &::after {

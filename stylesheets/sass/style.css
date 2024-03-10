@@ -10,6 +10,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: Manrope;
+  cursor: default;
 }
 
 .nav {
@@ -56,6 +57,7 @@ body {
   border: none;
   background-color: #2882de;
   font-family: manropeMedium;
+  cursor: pointer;
 }
 .nav .right .menubtn {
   display: none;
@@ -174,6 +176,7 @@ body {
   background-color: #2882de;
   font-family: manropeMedium;
   margin-top: 2vmax;
+  cursor: pointer;
 }
 .wrapper .sec1 .right {
   height: 70vh;
@@ -244,7 +247,7 @@ body {
     padding-left: 2.5vmax;
   }
   .wrapper .sec1 .left p {
-    padding-right: 3vmax;
+    padding-right: 0;
   }
 }
 .wrapper .sec2 {
@@ -399,9 +402,14 @@ body {
   }
 }
 @media (max-width: 10cm) {
-  .wrapper .sec3 .right,
-  .wrapper .sec5 .right {
+  .wrapper .sec3 .right {
     width: 95%;
+    padding: 10vmax 2.5vmax;
+  }
+}
+@media (max-width: 10cm) {
+  .wrapper .sec5 .right {
+    width: 80%;
     padding: 10vmax 2.5vmax;
   }
 }
@@ -501,7 +509,7 @@ body {
 }
 @media (max-width: 10cm) {
   .wrapper .sec4 .left {
-    width: 100%;
+    width: 98%;
   }
 }
 .wrapper .sec5 {
@@ -618,6 +626,7 @@ body {
   background-color: #2882de;
   font-family: manropeMedium;
   margin-top: 5vmax;
+  cursor: pointer;
 }
 .wrapper .sec6::after {
   content: "";
