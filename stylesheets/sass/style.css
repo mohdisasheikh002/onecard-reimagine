@@ -303,6 +303,7 @@ body {
   .wrapper .sec2 .textbox {
     flex-direction: column;
     margin-top: 4vmax;
+    gap: 3vmax;
   }
 }
 @media (max-width: 15cm) {
